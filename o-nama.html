@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upoznajte tim VesoDent ordinacije - Dr Veselin Trifković, specijalista protetike sa VMA, i Dr Mira Miletić, specijalista ortodoncije. 20+ godina iskustva.">
+    <meta name="keywords" content="dr veselin trifković, dr mira miletić, stomatolog novi beograd, tim stomatologa, VMA specijalista">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="O nama | VesoDent - Stomatološka ordinacija">
+    <meta property="og:description" content="Tim stručnjaka sa preko 20 godina iskustva u stomatologiji.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230EA5E9'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='18' font-weight='bold' fill='white'%3EV%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0EA5E9',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#0F172A',
+                        muted: '#64748B',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>O nama | VesoDent - Stomatološka ordinacija Novi Beograd</title>
+</head>
+<body class="font-body bg-white text-dark antialiased">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
+        Preskoči na sadržaj
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center transition-transform group-hover:scale-110">
+                        <span class="text-white font-heading font-bold text-xl">V</span>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-dark">VesoDent</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link">Početna</a>
+                    <a href="usluge.html" class="nav-link">Usluge</a>
+                    <a href="o-nama.html" class="nav-link active">O nama</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    <a href="tel:+381641848191" class="cta-button magnetic-btn">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        Zakažite termin
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden relative w-10 h-10 flex flex-col justify-center items-center" aria-label="Otvori meni">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="flex flex-col gap-2 p-6 pt-24">
+            <a href="index.html" class="mobile-link">Početna</a>
+            <a href="usluge.html" class="mobile-link">Usluge</a>
+            <a href="o-nama.html" class="mobile-link">O nama</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="kontakt.html" class="mobile-link">Kontakt</a>
+            <a href="tel:+381641848191" class="cta-button w-full text-center mt-6">
+                Zakažite termin
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="gradient-orb orb-1 opacity-30"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-primary font-medium mb-4 block fade-up">O nama</span>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 fade-up">
+                        Više od 20 godina<br>
+                        <span class="text-gradient">brige o vašem osmehu</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-muted fade-up">
+                        Od osnivanja do danas, naša misija ostaje ista: pružiti svakom pacijentu najbolju moguću stomatološku negu u prijateljskom okruženju.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-up">
+                        <h2 class="font-heading text-3xl sm:text-4xl font-bold mb-6">
+                            Naša priča
+                        </h2>
+                        <p class="text-lg text-muted mb-6">
+                            VesoDent je porodična stomatološka ordinacija osnovana sa jasnom vizijom: stvoriti prostor gde se pacijenti osećaju kao kod kuće, gde strah od stomatologa nestaje, a osmeh postaje razlog za dolazak.
+                        </p>
+                        <p class="text-lg text-muted mb-6">
+                            Kroz više od dve decenije rada, izgradili smo odnose poverenja sa hiljadama pacijenata. Mnogi od njih dolaze kod nas od detinjstva i danas dovode svoju decu. To poverenje je nešto na šta smo izuzetno ponosni.
+                        </p>
+                        <p class="text-lg text-muted">
+                            Naš pristup je jednostavan: slušamo, razumemo, i zajedno sa vama pronalazimo najbolje rešenje za vaše oralno zdravlje. Bez žurbe, bez pritiska, sa punom pažnjom.
+                        </p>
+                    </div>
+
+                    <div class="fade-up">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+                                <img src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                     alt="Moderna stomatološka oprema"
+                                     class="w-full h-full object-cover"
+                                     loading="lazy">
+                            </div>
+                            <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mt-8">
+                                <img src="https://images.pexels.com/photos/3845653/pexels-photo-3845653.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                     alt="Prijatna atmosfera u ordinaciji"
+                                     class="w-full h-full object-cover"
+                                     loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="py-20 lg:py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold mb-6">
+                        Naše vrednosti
+                    </h2>
+                    <p class="text-lg text-muted max-w-2xl mx-auto">
+                        Principi koji nas vode u svakodnevnom radu i odnosu sa pacijentima.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Empatija</h3>
+                        <p class="text-muted">Razumemo vaše strahove i brige. Slušamo pre nego što delujemo.</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Stručnost</h3>
+                        <p class="text-muted">Kontinuirano usavršavanje i praćenje najnovijih metoda u stomatologiji.</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Posvećenost</h3>
+                        <p class="text-muted">Svaki pacijent dobija punu pažnju. Bez žurbe, bez kompromisa sa kvalitetom.</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Porodičnost</h3>
+                        <p class="text-muted">Svaki pacijent je deo naše proširene porodice. Odnosi se grade godinama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Naš tim</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Upoznajte naše stručnjake
+                    </h2>
+                    <p class="text-lg text-muted max-w-2xl mx-auto">
+                        Tim posvećenih profesionalaca koji brinu o vašem oralnom zdravlju.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    <!-- Dr Veselin -->
+                    <div class="team-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-up">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Dr Veselin Trifković"
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="p-8">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                                Specijalista protetike
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold mb-2">Dr Veselin Trifković</h3>
+                            <p class="text-muted mb-6">
+                                Osnivač i vlasnik ordinacije. Završio Višu zubotehničku školu u Zemunu i Stomatološki fakultet u Pančevu. Trenutno na specijalizaciji iz stomatološke protetike na Vojnomedicinskoj akademiji.
+                            </p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Specijalizacija na VMA
+                                </div>
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    20+ godina iskustva
+                                </div>
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Krunice, mostovi, proteze
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dr Mira -->
+                    <div class="team-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-up">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://images.pexels.com/photos/5355840/pexels-photo-5355840.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Dr Mira Miletić"
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="p-8">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-600 text-sm font-medium mb-4">
+                                Specijalista ortodoncije
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold mb-2">Dr Mira Miletić</h3>
+                            <p class="text-muted mb-6">
+                                Specijalista ortopedije vilica sa dugogodišnjim iskustvom u radu sa decom i odraslima. Posvećena postizanju funkcionalnog i estetskog savršenstva.
+                            </p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Specijalista ortopedije vilica
+                                </div>
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Rad sa decom i odraslima
+                                </div>
+                                <div class="flex items-center gap-2 text-muted">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Fiksni i mobilni aparati
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-20 lg:py-32 bg-gradient-to-br from-primary to-sky-600 text-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="fade-up">
+                        <div class="font-heading text-5xl lg:text-6xl font-bold mb-2">20+</div>
+                        <div class="text-white/80">godina iskustva</div>
+                    </div>
+                    <div class="fade-up">
+                        <div class="font-heading text-5xl lg:text-6xl font-bold mb-2">1000+</div>
+                        <div class="text-white/80">zadovoljnih pacijenata</div>
+                    </div>
+                    <div class="fade-up">
+                        <div class="font-heading text-5xl lg:text-6xl font-bold mb-2">2</div>
+                        <div class="text-white/80">specijalista</div>
+                    </div>
+                    <div class="fade-up">
+                        <div class="font-heading text-5xl lg:text-6xl font-bold mb-2">100%</div>
+                        <div class="text-white/80">posvećenost pacijentima</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Gallery -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Naš prostor</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold mb-6">
+                        Moderna ordinacija za vaš komfor
+                    </h2>
+                    <p class="text-lg text-muted max-w-2xl mx-auto">
+                        Opremljeni najsavremenijom tehnologijom u prijatnom ambijentu.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <img src="https://images.pexels.com/photos/3845981/pexels-photo-3845981.jpeg?auto=compress&cs=tinysrgb&w=600"
+                             alt="Stomatološka stolica"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                             loading="lazy">
+                    </div>
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <img src="https://images.pexels.com/photos/3845806/pexels-photo-3845806.jpeg?auto=compress&cs=tinysrgb&w=600"
+                             alt="Stomatološki instrumenti"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                             loading="lazy">
+                    </div>
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <img src="https://images.pexels.com/photos/6627546/pexels-photo-6627546.jpeg?auto=compress&cs=tinysrgb&w=600"
+                             alt="Čekaonica"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 lg:py-32 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold mb-6 fade-up">
+                    Postanite deo naše porodice
+                </h2>
+                <p class="text-lg text-muted mb-8 fade-up">
+                    Zakažite prvi pregled i uverite se zašto nas pacijenti preporučuju već više od 20 godina.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
+                    <a href="tel:+381641848191" class="cta-primary inline-flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        Pozovite nas
+                    </a>
+                    <a href="kontakt.html" class="cta-secondary inline-flex items-center justify-center gap-2">
+                        Pošaljite poruku
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-xl">V</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl">VesoDent</span>
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Stomatološka ordinacija sa preko 20 godina iskustva. Porodična atmosfera i stručnost na koju se možete osloniti.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Brzi linkovi</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Početna</a></li>
+                        <li><a href="usluge.html" class="text-gray-400 hover:text-white transition-colors">Usluge</a></li>
+                        <li><a href="o-nama.html" class="text-gray-400 hover:text-white transition-colors">O nama</a></li>
+                        <li><a href="kontakt.html" class="text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Usluge</h3>
+                    <ul class="space-y-3">
+                        <li><a href="usluge.html#protetika" class="text-gray-400 hover:text-white transition-colors">Protetika</a></li>
+                        <li><a href="usluge.html#ortodoncija" class="text-gray-400 hover:text-white transition-colors">Ortodoncija</a></li>
+                        <li><a href="usluge.html#implanti" class="text-gray-400 hover:text-white transition-colors">Implanti</a></li>
+                        <li><a href="usluge.html#estetika" class="text-gray-400 hover:text-white transition-colors">Estetska stomatologija</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Kontakt</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Bulevar Arsenija Čarnojevića 82</li>
+                        <li>Blok 29, 11070 Novi Beograd</li>
+                        <li>
+                            <a href="tel:+381641848191" class="hover:text-white transition-colors">064 18 48 191</a>
+                        </li>
+                        <li>
+                            <a href="mailto:vesodent@hotmail.rs" class="hover:text-white transition-colors">vesodent@hotmail.rs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 VesoDent. Sva prava zadržana.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Sajt kreiran sa pažnjom za vaš osmeh.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

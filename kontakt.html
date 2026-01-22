@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte VesoDent ordinaciju - Bulevar Arsenija Čarnojevića 82, Blok 29, Novi Beograd. Telefon: 064 18 48 191. Blizu Štark Arene.">
+    <meta name="keywords" content="kontakt vesodent, stomatolog blok 29, zubar arena, zakazivanje stomatologa novi beograd">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kontakt | VesoDent - Stomatološka ordinacija">
+    <meta property="og:description" content="Zakažite termin u VesoDent ordinaciji. Blok 29, samo 300m od Štark Arene.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230EA5E9'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='18' font-weight='bold' fill='white'%3EV%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0EA5E9',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#0F172A',
+                        muted: '#64748B',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Kontakt | VesoDent - Stomatološka ordinacija Novi Beograd</title>
+</head>
+<body class="font-body bg-white text-dark antialiased">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
+        Preskoči na sadržaj
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center transition-transform group-hover:scale-110">
+                        <span class="text-white font-heading font-bold text-xl">V</span>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-dark">VesoDent</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link">Početna</a>
+                    <a href="usluge.html" class="nav-link">Usluge</a>
+                    <a href="o-nama.html" class="nav-link">O nama</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="kontakt.html" class="nav-link active">Kontakt</a>
+                    <a href="tel:+381641848191" class="cta-button magnetic-btn">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        Zakažite termin
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden relative w-10 h-10 flex flex-col justify-center items-center" aria-label="Otvori meni">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="flex flex-col gap-2 p-6 pt-24">
+            <a href="index.html" class="mobile-link">Početna</a>
+            <a href="usluge.html" class="mobile-link">Usluge</a>
+            <a href="o-nama.html" class="mobile-link">O nama</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="kontakt.html" class="mobile-link">Kontakt</a>
+            <a href="tel:+381641848191" class="cta-button w-full text-center mt-6">
+                Zakažite termin
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="gradient-orb orb-1 opacity-30"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-primary font-medium mb-4 block fade-up">Kontakt</span>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 fade-up">
+                        Javite nam se<br>
+                        <span class="text-gradient">sa poverenjem</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-muted fade-up">
+                        Bilo da imate pitanja, želite da zakažete termin ili vam je potrebna hitna pomoć, tu smo za vas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info + Form Section -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Contact Information -->
+                    <div class="fade-up">
+                        <h2 class="font-heading text-3xl font-bold mb-8">Kontakt informacije</h2>
+
+                        <div class="space-y-8 mb-12">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-semibold text-lg mb-1">Adresa</h3>
+                                    <p class="text-muted">
+                                        Bulevar Arsenija Čarnojevića 82<br>
+                                        Blok 29, 11070 Novi Beograd
+                                    </p>
+                                    <a href="https://www.google.com/maps/place/VesoDent" target="_blank" rel="noopener noreferrer" class="text-primary text-sm hover:underline mt-2 inline-block">
+                                        Otvori u Google Maps →
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-semibold text-lg mb-1">Telefon</h3>
+                                    <a href="tel:+381641848191" class="text-2xl font-heading font-bold text-primary hover:underline">
+                                        064 18 48 191
+                                    </a>
+                                    <p class="text-muted text-sm mt-1">WhatsApp / Viber / Poziv</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-semibold text-lg mb-1">Email</h3>
+                                    <a href="mailto:vesodent@hotmail.rs" class="text-primary hover:underline">
+                                        vesodent@hotmail.rs
+                                    </a>
+                                    <p class="text-muted text-sm mt-1">Odgovaramo u roku od 24h</p>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-semibold text-lg mb-1">Radno vreme</h3>
+                                    <div class="text-muted space-y-1">
+                                        <p>Ponedeljak - Petak: <span class="text-dark font-medium">09:00 - 20:00</span></p>
+                                        <p>Subota: <span class="text-dark font-medium">09:00 - 14:00</span></p>
+                                        <p>Nedelja: <span class="text-red-500 font-medium">Zatvoreno</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- How to reach us -->
+                        <div class="bg-slate-50 rounded-2xl p-6">
+                            <h3 class="font-heading font-semibold text-lg mb-4">Kako do nas?</h3>
+                            <div class="space-y-3 text-sm text-muted">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span><strong class="text-dark">Lokacija:</strong> Blok 29, samo 300m od Štark Arene</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span><strong class="text-dark">Parking:</strong> Plava zona (Zona 4)</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span><strong class="text-dark">Autobus:</strong> Linije 18, 70, 74, 88, 601</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="fade-up">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 lg:p-10">
+                            <h2 class="font-heading text-2xl font-bold mb-2">Pošaljite nam poruku</h2>
+                            <p class="text-muted mb-8">Popunite formu i javićemo vam se u najkraćem roku.</p>
+
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium mb-2">Ime i prezime *</label>
+                                        <input type="text" id="name" name="name" required
+                                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                               placeholder="Vaše ime">
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium mb-2">Telefon *</label>
+                                        <input type="tel" id="phone" name="phone" required
+                                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                               placeholder="06x xxx xxxx">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                    <input type="email" id="email" name="email"
+                                           class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                           placeholder="vasa@email.com">
+                                </div>
+
+                                <div>
+                                    <label for="service" class="block text-sm font-medium mb-2">Usluga</label>
+                                    <select id="service" name="service"
+                                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white">
+                                        <option value="">Izaberite uslugu (opciono)</option>
+                                        <option value="pregled">Redovan pregled</option>
+                                        <option value="protetika">Protetika (krunice, mostovi)</option>
+                                        <option value="ortodoncija">Ortodoncija</option>
+                                        <option value="implanti">Implanti</option>
+                                        <option value="estetika">Estetska stomatologija</option>
+                                        <option value="hitno">Hitna intervencija</option>
+                                        <option value="ostalo">Ostalo</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-sm font-medium mb-2">Poruka *</label>
+                                    <textarea id="message" name="message" rows="4" required
+                                              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                                              placeholder="Opišite ukratko šta vas interesuje ili koji problem imate..."></textarea>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <input type="checkbox" id="privacy" name="privacy" required
+                                           class="mt-1 w-4 h-4 text-primary border-gray-200 rounded focus:ring-primary">
+                                    <label for="privacy" class="text-sm text-muted">
+                                        Slažem se sa obradom podataka u svrhu odgovora na upit. Vaši podaci su bezbedni i neće biti deljeni sa trećim stranama.
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="cta-primary w-full justify-center magnetic-btn">
+                                    Pošaljite poruku
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </button>
+                            </form>
+
+                            <div id="form-success" class="hidden text-center py-8">
+                                <div class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-heading text-xl font-bold mb-2">Poruka poslata!</h3>
+                                <p class="text-muted">Hvala vam na poruci. Javićemo vam se u najkraćem roku.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="pb-20 lg:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-3xl overflow-hidden shadow-2xl h-96 lg:h-[500px] fade-up">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.0614144891974!2d20.41476531559961!3d44.81127197909865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f8c7e54e3af%3A0x1c5c0c3c0c3c0c3c!2sBulevar%20Arsenija%20%C4%8Carnojevi%C4%87a%2082%2C%20Beograd!5e0!3m2!1ssr!2srs!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="VesoDent lokacija na mapi">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact CTA -->
+        <section class="py-20 lg:py-32 bg-gradient-to-br from-primary to-sky-600 text-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 fade-up">
+                    Najbrži način za zakazivanje?
+                </h2>
+                <p class="text-xl text-white/80 mb-8 fade-up">
+                    Pozovite nas direktno ili pošaljite poruku putem WhatsApp/Viber aplikacije.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
+                    <a href="tel:+381641848191" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl magnetic-btn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        064 18 48 191
+                    </a>
+                    <a href="https://wa.me/381641848191" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all shadow-lg hover:shadow-xl">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-xl">V</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl">VesoDent</span>
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Stomatološka ordinacija sa preko 20 godina iskustva. Porodična atmosfera i stručnost na koju se možete osloniti.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Brzi linkovi</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Početna</a></li>
+                        <li><a href="usluge.html" class="text-gray-400 hover:text-white transition-colors">Usluge</a></li>
+                        <li><a href="o-nama.html" class="text-gray-400 hover:text-white transition-colors">O nama</a></li>
+                        <li><a href="kontakt.html" class="text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Usluge</h3>
+                    <ul class="space-y-3">
+                        <li><a href="usluge.html#protetika" class="text-gray-400 hover:text-white transition-colors">Protetika</a></li>
+                        <li><a href="usluge.html#ortodoncija" class="text-gray-400 hover:text-white transition-colors">Ortodoncija</a></li>
+                        <li><a href="usluge.html#implanti" class="text-gray-400 hover:text-white transition-colors">Implanti</a></li>
+                        <li><a href="usluge.html#estetika" class="text-gray-400 hover:text-white transition-colors">Estetska stomatologija</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Kontakt</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Bulevar Arsenija Čarnojevića 82</li>
+                        <li>Blok 29, 11070 Novi Beograd</li>
+                        <li>
+                            <a href="tel:+381641848191" class="hover:text-white transition-colors">064 18 48 191</a>
+                        </li>
+                        <li>
+                            <a href="mailto:vesodent@hotmail.rs" class="hover:text-white transition-colors">vesodent@hotmail.rs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 VesoDent. Sva prava zadržana.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Sajt kreiran sa pažnjom za vaš osmeh.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

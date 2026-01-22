@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VesoDent - Stomatološka ordinacija u Novom Beogradu sa preko 20 godina iskustva. Dr Veselin Trifković, specijalista protetike. Bezbolne procedure, pristupačne cene.">
+    <meta name="keywords" content="stomatolog novi beograd, zubar arena, stomatološka ordinacija blok 29, dr veselin trifković, protetika beograd">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="VesoDent - Stomatološka ordinacija | Novi Beograd">
+    <meta property="og:description" content="Preko 20 godina brige o vašem osmehu. Bezbolne procedure, pristupačne cene, porodična atmosfera.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vesodent.com">
+    <meta property="og:image" content="images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230EA5E9'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='18' font-weight='bold' fill='white'%3EV%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0EA5E9',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#0F172A',
+                        muted: '#64748B',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>VesoDent - Stomatološka ordinacija | Novi Beograd, Arena</title>
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "VesoDent - Stomatološka ordinacija",
+        "image": "https://vesodent.com/images/ordinacija.jpg",
+        "telephone": "+381641848191",
+        "email": "vesodent@hotmail.rs",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bulevar Arsenija Čarnojevića 82, Blok 29",
+            "addressLocality": "Novi Beograd",
+            "postalCode": "11070",
+            "addressCountry": "RS"
+        },
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-20:00, Sa 09:00-14:00"
+    }
+    </script>
+</head>
+<body class="font-body bg-white text-dark antialiased">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
+        Preskoči na sadržaj
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center transition-transform group-hover:scale-110">
+                        <span class="text-white font-heading font-bold text-xl">V</span>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-dark">VesoDent</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link active">Početna</a>
+                    <a href="usluge.html" class="nav-link">Usluge</a>
+                    <a href="o-nama.html" class="nav-link">O nama</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    <a href="tel:+381641848191" class="cta-button magnetic-btn">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        Zakažite termin
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden relative w-10 h-10 flex flex-col justify-center items-center" aria-label="Otvori meni">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="flex flex-col gap-2 p-6 pt-24">
+            <a href="index.html" class="mobile-link">Početna</a>
+            <a href="usluge.html" class="mobile-link">Usluge</a>
+            <a href="o-nama.html" class="mobile-link">O nama</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="kontakt.html" class="mobile-link">Kontakt</a>
+            <a href="tel:+381641848191" class="cta-button w-full text-center mt-6">
+                Zakažite termin
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section relative min-h-screen flex items-center overflow-hidden pt-20">
+            <!-- Animated Background -->
+            <div class="absolute inset-0 hero-bg">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 lg:py-0">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Content -->
+                    <div class="hero-content">
+                        <!-- Trust Badge -->
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 fade-up">
+                            <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                            20+ godina iskustva u stomatologiji
+                        </div>
+
+                        <!-- Headline -->
+                        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 fade-up">
+                            Osmeh koji<br>
+                            <span class="text-gradient">menja sve.</span>
+                        </h1>
+
+                        <!-- Subheadline -->
+                        <p class="text-lg sm:text-xl lg:text-2xl text-muted mb-8 max-w-lg fade-up">
+                            Bez straha, bez bola. Porodična atmosfera i stručnost na koju se možete osloniti.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 fade-up">
+                            <a href="tel:+381641848191" class="cta-primary magnetic-btn">
+                                Zakažite termin
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                            <a href="#usluge" class="cta-secondary">
+                                Pogledajte usluge
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200 fade-up">
+                            <div>
+                                <div class="font-heading text-3xl lg:text-4xl font-bold text-dark">20+</div>
+                                <div class="text-sm text-muted">godina iskustva</div>
+                            </div>
+                            <div>
+                                <div class="font-heading text-3xl lg:text-4xl font-bold text-dark">1000+</div>
+                                <div class="text-sm text-muted">zadovoljnih pacijenata</div>
+                            </div>
+                            <div>
+                                <div class="font-heading text-3xl lg:text-4xl font-bold text-dark">VMA</div>
+                                <div class="text-sm text-muted">specijalizacija</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="hero-image-wrapper fade-up">
+                        <div class="relative">
+                            <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-sky-100 to-emerald-50">
+                                <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                     alt="Moderno opremljena stomatološka ordinacija VesoDent"
+                                     class="w-full h-full object-cover hero-image"
+                                     loading="eager">
+                            </div>
+
+                            <!-- Floating Card -->
+                            <div class="absolute -bottom-6 -left-6 glass-card p-4 hidden lg:flex items-center gap-3 floating-card">
+                                <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-dark">Bezbolne procedure</div>
+                                    <div class="text-sm text-muted">Moderna anestezija</div>
+                                </div>
+                            </div>
+
+                            <!-- Second Floating Card -->
+                            <div class="absolute -top-4 -right-4 glass-card p-4 hidden lg:flex items-center gap-3 floating-card" style="animation-delay: 1s;">
+                                <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-dark">Brzo zakazivanje</div>
+                                    <div class="text-sm text-muted">Pozovite sada</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Solution Section -->
+        <section class="py-20 lg:py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-up">
+                        <span class="text-primary font-medium mb-4 block">Razumemo vas</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                            Strah od stomatologa?<br>
+                            <span class="text-muted">Niste jedini.</span>
+                        </h2>
+                        <p class="text-lg text-muted mb-6">
+                            Znamo da mnogi odlažu posetu stomatologu godinama. Neprijatna iskustva iz prošlosti, strah od bola, nepoznato okruženje. Sve to razumemo.
+                        </p>
+                        <p class="text-lg text-muted mb-8">
+                            Zato smo u VesoDentu stvorili prostor gde se svaki pacijent oseća sigurno. Gde vas niko ne osuđuje. Gde se problemi rešavaju bez bola i sa osmehom.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=150"
+                                 alt="Dr Veselin Trifković"
+                                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-lg">
+                            <div>
+                                <div class="font-semibold">Dr Veselin Trifković</div>
+                                <div class="text-sm text-muted">Specijalista protetike, VMA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 fade-up">
+                        <div class="service-card p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-semibold mb-2">Bez neprijatnosti</h3>
+                            <p class="text-sm text-muted">Opuštena atmosfera bez pritiska i žurbe</p>
+                        </div>
+
+                        <div class="service-card p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-semibold mb-2">Bez bola</h3>
+                            <p class="text-sm text-muted">Moderna anestezija za bezbolne procedure</p>
+                        </div>
+
+                        <div class="service-card p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-semibold mb-2">Pristupačne cene</h3>
+                            <p class="text-sm text-muted">Kvalitet koji ne mora da bude skup</p>
+                        </div>
+
+                        <div class="service-card p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-semibold mb-2">Porodična atmosfera</h3>
+                            <p class="text-sm text-muted">Svaki pacijent je deo naše porodice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="usluge" class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Naše usluge</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Kompletan spektar<br>stomatoloških usluga
+                    </h2>
+                    <p class="text-lg text-muted max-w-2xl mx-auto">
+                        Od preventivnih pregleda do složenih protetičkih radova. Sve na jednom mestu, sa pažnjom i stručnošću.
+                    </p>
+                </div>
+
+                <!-- Bento Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                    <!-- Large Card - Protetika -->
+                    <div class="md:col-span-2 md:row-span-2 service-card-bento large bg-gradient-to-br from-primary to-sky-600 text-white rounded-3xl p-8 lg:p-10 fade-up">
+                        <div class="h-full flex flex-col justify-between">
+                            <div>
+                                <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-6">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-heading text-2xl lg:text-3xl font-bold mb-4">Stomatološka protetika</h3>
+                                <p class="text-white/80 text-lg mb-6">
+                                    Specijalizacija Dr Veselina Trifkovića. Krunice, mostovi i proteze vrhunskog kvaliteta za savršen osmeh i funkcionalnost.
+                                </p>
+                                <ul class="space-y-2 text-white/90">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Metalokeramičke i bezmetalne krunice
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Mostovi i parcijalne proteze
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                        Totalne proteze
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="usluge.html#protetika" class="inline-flex items-center gap-2 text-white font-semibold mt-8 group">
+                                Saznajte više
+                                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Small Card - Preventiva -->
+                    <div class="service-card-bento small bg-slate-50 rounded-3xl p-6 lg:p-8 fade-up">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">Preventiva</h3>
+                        <p class="text-muted text-sm">Redovni pregledi, čišćenje kamenca, zalivanje fisura</p>
+                    </div>
+
+                    <!-- Small Card - Estetika -->
+                    <div class="service-card-bento small bg-slate-50 rounded-3xl p-6 lg:p-8 fade-up">
+                        <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">Estetska stomatologija</h3>
+                        <p class="text-muted text-sm">Beljenje zuba, fasete, GRADIA DIRECT kompozit</p>
+                    </div>
+
+                    <!-- Medium Card - Ortodoncija -->
+                    <div class="md:col-span-2 service-card-bento medium bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-3xl p-6 lg:p-8 fade-up">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6">
+                            <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-heading text-xl lg:text-2xl font-bold mb-2">Ortodoncija</h3>
+                                <p class="text-white/80">
+                                    Dr Mira Miletić, specijalista ortopedije vilica. Ispravljanje zuba za decu i odrasle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card - Implanti -->
+                    <div class="service-card-bento small bg-slate-50 rounded-3xl p-6 lg:p-8 fade-up">
+                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">Implantologija</h3>
+                        <p class="text-muted text-sm">Trajna zamena za izgubljene zube</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 fade-up">
+                    <a href="usluge.html" class="cta-secondary inline-flex items-center gap-2">
+                        Pogledajte sve usluge
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="py-20 lg:py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Zašto VesoDent?</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Šta nas izdvaja
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">20+ godina iskustva</h3>
+                        <p class="text-muted">Dve decenije posvećenosti stomatologiji i hiljadama zadovoljnih pacijenata</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">VMA specijalizacija</h3>
+                        <p class="text-muted">Dr Veselin na specijalizaciji protetike na Vojnomedicinskoj akademiji</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Porodična atmosfera</h3>
+                        <p class="text-muted">Svaki pacijent je deo naše porodice, bez osuđivanja i sa punom pažnjom</p>
+                    </div>
+
+                    <div class="text-center fade-up">
+                        <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3">Odlična lokacija</h3>
+                        <p class="text-muted">Blok 29, samo 300m od Štark Arene, lako dostupno i parking</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Recenzije</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Šta kažu naši pacijenti
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card bg-white rounded-3xl p-8 shadow-lg border border-gray-100 fade-up">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-muted mb-6 italic">
+                            "Najbolji stomatolog. Fantastičan doktor. Prijateljski nastrojen sa divnom energijom. Uvek spreman da sasluša i maksimalno pomogne. Svakog pacijenta doživljava kao najboljeg prijatelja."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <span class="font-semibold text-primary">N</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Nataša S.</div>
+                                <div class="text-sm text-muted">Pacijent</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card bg-white rounded-3xl p-8 shadow-lg border border-gray-100 fade-up">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-muted mb-6 italic">
+                            "Veliki stručnjaci iz svoje oblasti, popravka zuba je bila vrlo laka. Bez preteranog bola, uz primljenu anesteziju, skoro ništa nisam osetio. Svima bih preporučio ovu ordinaciju."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+                                <span class="font-semibold text-secondary">M</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Miloš P.</div>
+                                <div class="text-sm text-muted">Pacijent</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card bg-white rounded-3xl p-8 shadow-lg border border-gray-100 fade-up">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-muted mb-6 italic">
+                            "Imala sam jaku upalu i dugo sam odlagala posetu jer sam se bojala. Problem je vrlo lako rešen i sada sam redovni pacijent ove ordinacije. Sve preporuke."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                                <span class="font-semibold text-accent">M</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Maja R.</div>
+                                <div class="text-sm text-muted">Pacijent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 lg:py-32 bg-gradient-to-br from-primary to-sky-600 text-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 fade-up">
+                    Spremni ste za novi osmeh?
+                </h2>
+                <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto fade-up">
+                    Zakažite besplatnu konsultaciju i napravite prvi korak ka zdravijim zubima i lepšem osmehu.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
+                    <a href="tel:+381641848191" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl magnetic-btn">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        064 18 48 191
+                    </a>
+                    <a href="kontakt.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all">
+                        Pošaljite poruku
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 lg:py-32">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <span class="text-primary font-medium mb-4 block">Česta pitanja</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Imate pitanja?
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-white rounded-2xl border border-gray-200 overflow-hidden fade-up">
+                        <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between gap-4">
+                            <span class="font-semibold text-lg">Da li su procedure zaista bezbolne?</span>
+                            <svg class="faq-icon w-6 h-6 text-muted flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-5 hidden">
+                            <p class="text-muted">Da, koristimo modernu anesteziju koja omogućava potpuno bezbolne procedure. Mnogi naši pacijenti koji su se godinama plašili stomatologa sada redovno dolaze bez ikakve nelagodnosti.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-white rounded-2xl border border-gray-200 overflow-hidden fade-up">
+                        <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between gap-4">
+                            <span class="font-semibold text-lg">Koliko košta prvi pregled?</span>
+                            <svg class="faq-icon w-6 h-6 text-muted flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-5 hidden">
+                            <p class="text-muted">Prvi pregled i konsultacija su po pristupačnim cenama. Pozovite nas na 064 18 48 191 za tačne informacije o cenama i dostupnim terminima.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-white rounded-2xl border border-gray-200 overflow-hidden fade-up">
+                        <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between gap-4">
+                            <span class="font-semibold text-lg">Kako mogu zakazati termin?</span>
+                            <svg class="faq-icon w-6 h-6 text-muted flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-5 hidden">
+                            <p class="text-muted">Najbrži način je da nas pozovete na 064 18 48 191 ili pošaljete poruku putem WhatsApp/Viber aplikacije. Možete nas kontaktirati i putem email-a na vesodent@hotmail.rs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-white rounded-2xl border border-gray-200 overflow-hidden fade-up">
+                        <button class="faq-question w-full px-6 py-5 text-left flex items-center justify-between gap-4">
+                            <span class="font-semibold text-lg">Gde se nalazite i da li ima parkinga?</span>
+                            <svg class="faq-icon w-6 h-6 text-muted flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-5 hidden">
+                            <p class="text-muted">Nalazimo se na Bulevaru Arsenija Čarnojevića 82, Blok 29, samo 300m od Štark Arene. Parking je u plavoj zoni (zona 4). Do nas možete doći i autobuskim linijama 18, 70, 74, 88 i 601.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 lg:py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="fade-up">
+                        <span class="text-primary font-medium mb-4 block">Kontakt</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                            Posetite nas
+                        </h2>
+                        <p class="text-lg text-muted mb-8">
+                            Nalazimo se u samom srcu Novog Beograda, na samo par minuta od Štark Arene.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Adresa</h3>
+                                    <p class="text-muted">Bulevar Arsenija Čarnojevića 82<br>Blok 29, 11070 Novi Beograd</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Telefon</h3>
+                                    <a href="tel:+381641848191" class="text-primary hover:underline">064 18 48 191</a>
+                                    <p class="text-sm text-muted">WhatsApp / Viber</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Email</h3>
+                                    <a href="mailto:vesodent@hotmail.rs" class="text-primary hover:underline">vesodent@hotmail.rs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-up">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl h-80 lg:h-96">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.0614144891974!2d20.41476531559961!3d44.81127197909865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f8c7e54e3af%3A0x1c5c0c3c0c3c0c3c!2sBulevar%20Arsenija%20%C4%8Carnojevi%C4%87a%2082%2C%20Beograd!5e0!3m2!1ssr!2srs!4v1234567890"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="VesoDent lokacija na mapi">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-xl">V</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl">VesoDent</span>
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Stomatološka ordinacija sa preko 20 godina iskustva. Porodična atmosfera i stručnost na koju se možete osloniti.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Brzi linkovi</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Početna</a></li>
+                        <li><a href="usluge.html" class="text-gray-400 hover:text-white transition-colors">Usluge</a></li>
+                        <li><a href="o-nama.html" class="text-gray-400 hover:text-white transition-colors">O nama</a></li>
+                        <li><a href="kontakt.html" class="text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Usluge</h3>
+                    <ul class="space-y-3">
+                        <li><a href="usluge.html#protetika" class="text-gray-400 hover:text-white transition-colors">Protetika</a></li>
+                        <li><a href="usluge.html#ortodoncija" class="text-gray-400 hover:text-white transition-colors">Ortodoncija</a></li>
+                        <li><a href="usluge.html#implanti" class="text-gray-400 hover:text-white transition-colors">Implanti</a></li>
+                        <li><a href="usluge.html#estetika" class="text-gray-400 hover:text-white transition-colors">Estetska stomatologija</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6">Kontakt</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Bulevar Arsenija Čarnojevića 82</li>
+                        <li>Blok 29, 11070 Novi Beograd</li>
+                        <li>
+                            <a href="tel:+381641848191" class="hover:text-white transition-colors">064 18 48 191</a>
+                        </li>
+                        <li>
+                            <a href="mailto:vesodent@hotmail.rs" class="hover:text-white transition-colors">vesodent@hotmail.rs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 VesoDent. Sva prava zadržana.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Sajt kreiran sa pažnjom za vaš osmeh.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent (Placeholder) -->
+    <div id="cookie-consent" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-md bg-white rounded-2xl shadow-2xl p-6 z-50 hidden">
+        <p class="text-sm text-muted mb-4">
+            Koristimo kolačiće kako bismo poboljšali vaše iskustvo na sajtu.
+        </p>
+        <div class="flex gap-3">
+            <button id="accept-cookies" class="flex-1 px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
+                Prihvatam
+            </button>
+            <button id="decline-cookies" class="px-4 py-2 text-muted text-sm font-medium hover:text-dark transition-colors">
+                Odbij
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
